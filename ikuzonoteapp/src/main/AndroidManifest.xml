@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ikuzo.project.mynotesapp">
+    package="com.ikuzo.project.ikuzonoteapp">
 
-    <permission android:name="com.ikuzo.project.mynotesapp.READ_DATABASE" android:protectionLevel="normal"/>
-    <permission android:name="com.ikuzo.project.mynotesapp.WRITE_DATABASE" android:protectionLevel="normal"/>
-
+    <uses-permission android:name="com.ikuzo.project.mynotesapp.READ_DATABASE" />
+    <uses-permission android:name="com.ikuzo.project.mynotesapp.WRITE_DATABASE" />
 
     <application
         android:allowBackup="true"
@@ -20,15 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FormAddUpdateActivity"></activity>
-
-
-        <provider
-            android:authorities="com.ikuzo.project.mynotesapp"
-            android:name=".provider.NoteProvider"
-            android:exported="true"
-            android:readPermission="com.ikuzo.project.mynotesapp.READ_DATABASE"
-            android:writePermission="com.ikuzo.project.mynotesapp.WRITE_DATABASE" />
+        <activity android:name=".FormActivity"></activity>
     </application>
 
 </manifest>

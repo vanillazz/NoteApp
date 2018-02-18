@@ -1,4 +1,4 @@
-package com.ikuzo.project.mynotesapp.db;
+package com.ikuzo.project.ikuzonoteapp;
 
 import android.database.Cursor;
 import android.net.Uri;
